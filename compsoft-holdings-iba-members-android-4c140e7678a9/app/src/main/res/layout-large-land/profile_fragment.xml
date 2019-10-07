@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:tools="http://schemas.android.com/tools"
+                                            android:id="@+id/scroll_view"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/profile_main_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_horizontal_margin">
+
+                <RelativeLayout
+                    android:layout_width="115dp"
+                    android:layout_height="140dp">
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/profile_picture"
+                        android:layout_width="100dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="@dimen/profile_normal_content_top_margin"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile_image_placeholder"/>
+
+                    <ProgressBar
+                        android:id="@+id/profile_picture_progress_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/profile_change_picture_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/profile_picture"
+                        android:layout_alignStart="@+id/profile_picture"
+                        android:src="@drawable/camera"/>
+
+                    <!--<include-->
+                        <!--android:id="@+id/attending_members_layout"-->
+                        <!--layout="@layout/attending_member_badge_layout"-->
+                        <!--android:layout_width="@dimen/profile_member_attending_badge_height"-->
+                        <!--android:layout_height="@dimen/profile_member_attending_badge_height"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_alignParentEnd="true"/>-->
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/default_horizontal_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profile_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText"/>
+
+                    <TextView
+                        android:id="@+id/profile_firm_name"
+                        style="@style/ProfileHeaderTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Firm Name"
+                        tools:ignore="HardcodedText"/>
+
+                    <TextView
+                        android:id="@+id/profile_job_role"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Job Role"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        tools:ignore="HardcodedText"/>
+
+                    <TextView
+                        android:id="@+id/profile_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_horizontal_margin"
+                        android:text="Address"
+                        tools:ignore="HardcodedText"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/ProfileHeaderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_horizontal_margin"
+                android:layout_marginTop="@dimen/default_vertical_margin"
+                android:text="@string/profile_contact_info"
+                tools:ignore="HardcodedText"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_normal_content_top_margin"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_horizontal_margin">
+
+                <ImageView
+                    android:layout_width="@dimen/profile_contact_info_icon_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/email"/>
+
+                <TextView
+                    android:id="@+id/profile_email"
+                    style="@style/ProfileLinkTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/default_horizontal_margin"
+                    android:autoLink="email"
+                    android:text="@string/profile_no_email"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_horizontal_margin">
+
+                <ImageView
+                    android:layout_width="@dimen/profile_contact_info_icon_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/phone"/>
+
+                <TextView
+                    android:id="@+id/profile_phone_number"
+                    style="@style/ProfileLinkTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/default_horizontal_margin"
+                    android:autoLink="phone"
+                    android:text="@string/profile_no_phone_number"/>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/profile_message_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@android:color/white"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:visibility="gone"-->
+                <!--android:padding="@dimen/default_horizontal_margin">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="@dimen/profile_contact_info_icon_width"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:src="@drawable/profile_message_icon"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/profile_message"-->
+                    <!--style="@style/ProfileMessageLinkTextView"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginStart="@dimen/default_horizontal_margin"-->
+                    <!--android:autoLink="all"-->
+                    <!--android:text="@string/profile_message"/>-->
+            <!--</LinearLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/default_horizontal_margin"
+                android:layout_marginStart="@dimen/default_horizontal_margin"
+                android:layout_marginTop="@dimen/default_vertical_margin">
+
+                <TextView
+                    style="@style/ProfileHeaderTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/profile_bio"
+                    tools:ignore="HardcodedText"/>
+
+                <TextView
+                    android:id="@+id/profile_profile_visibility"
+                    style="@style/ProfileHeaderTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/activity_content_padding"
+                    android:background="@drawable/clear_background_button"
+                    android:drawableEnd="@drawable/edit"
+                    android:drawablePadding="@dimen/activity_content_padding"
+                    android:text="@string/profile_visibility_state_private"
+                    tools:ignore="HardcodedText"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/profile_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/default_horizontal_margin"
+                android:text="bio text"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                style="@style/ProfileHeaderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_horizontal_margin"
+                android:layout_marginTop="@dimen/default_vertical_margin"
+                android:text="@string/profile_committees"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                android:id="@+id/profile_committees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_normal_content_top_margin"
+                android:background="@android:color/white"
+                android:padding="@dimen/default_horizontal_margin"
+                android:text="committees list"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                style="@style/ProfileHeaderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_horizontal_margin"
+                android:layout_marginTop="@dimen/default_vertical_margin"
+                android:text="@string/profile_areas_of_practice"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                android:id="@+id/profile_areas_of_practice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_normal_content_top_margin"
+                android:layout_marginBottom="80dp"
+                android:background="@android:color/white"
+                android:padding="@dimen/default_horizontal_margin"
+                android:text="areas of practice list"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/profile_main_view"
+            android:layout_alignTop="@+id/profile_main_view"
+            android:background="@color/searchResultProfileSelected"
+            android:visibility="invisible">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

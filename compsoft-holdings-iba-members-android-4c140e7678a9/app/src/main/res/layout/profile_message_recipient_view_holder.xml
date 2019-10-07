@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="80dp"
+                android:paddingLeft="@dimen/activity_content_padding"
+                android:paddingTop="@dimen/activity_content_padding">
+
+    <TextView
+        android:id="@+id/message_day_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_content_padding"
+        android:layout_marginTop="@dimen/activity_small_content_padding"
+        android:textSize="12dp"/>
+
+    <LinearLayout
+        android:id="@id/message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/message_day_header"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_medium_content_padding"
+            android:paddingRight="@dimen/activity_medium_content_padding"
+            android:paddingTop="@dimen/activity_medium_content_padding"
+            android:textColor="@color/conference_search_font_tint"/>
+
+        <TextView
+            android:id="@+id/message_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingBottom="@dimen/activity_medium_content_padding"
+            android:paddingLeft="@dimen/activity_medium_content_padding"
+            android:paddingRight="@dimen/activity_medium_content_padding"
+            android:textColor="@color/profile_message_text_date_dark"
+            android:textSize="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@+id/message_layout"
+        android:layout_alignStart="@+id/message_layout"
+        android:visibility="gone"/>
+
+</RelativeLayout>

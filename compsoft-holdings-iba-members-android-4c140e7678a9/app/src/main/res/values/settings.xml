@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string translatable="false" name="file_provider_authorities">com.ibamembers.conference.chat.MySuggestionProvider.release</string>
+
+
+    <!-- NOTE: change this for new conference -->
+    <integer name="current_conference_id">840</integer>
+
+    <string name="app_version">3</string>
+    <integer name="rest_client_retries">3</integer>
+    <integer name="rest_client_retry_backoff_ms">2000</integer>
+
+    <string name="iba_contact_email">member@int-bar.org</string>
+
+    <!--Live-->
+    <string name="rest_client_api_url">https://ibamembersapp.ibanet.org/</string>
+    <string name="image_prefix_url">https://ibamembersapp.ibanet.org/images/contentlibrary/</string>
+    <string name="profile_image_prefix">https://ibamembersapp.ibanet.org/Officers/Images/</string>
+
+
+    <!-- Staging -->
+    <!--<string name="rest_client_api_url">http://custom-env.ycpprypmmr.eu-west-1.elasticbeanstalk.com/</string>-->
+    <!--<string name="rest_client_api_url">http://185.99.84.49/</string>-->
+
+    <string name="main_account_notifications_default_channel">DefaultChannel</string>
+    <string name="main_account_notifications_default_channel_name">Default Channel</string>
+    <string name="main_account_notifications_default_channel_description">Default notification channel</string>
+
+    <!-- Maps Settings -->
+    <string-array name="building_name_list">
+        <item>1F</item>
+        <item>2F</item>
+        <item>3F</item>
+        <item>4F</item>
+        <item>Offsite</item>
+    </string-array>
+
+    <!-- Conference configs-->
+    <bool name="conference_show_floor_key">false</bool>
+
+
+</resources>

@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M6,3.5h20c0.8,0 1.5,0.7 1.5,1.5v24c0,0.8 -0.7,1.5 -1.5,1.5L6,30.5c-0.8,0 -1.5,-0.7 -1.5,-1.5L4.5,5C4.5,4.2 5.2,3.5 6,3.5z"
+        android:strokeWidth="1"
+        android:strokeColor="@color/schedule_item_text" />
+    <path
+        android:fillColor="@color/schedule_item_text"
+        android:pathData="M4.519,10.1L27.519,10.1"
+        android:strokeWidth="1"
+        android:strokeColor="@color/schedule_item_text" />
+    <path
+        android:fillColor="@color/schedule_item_text"
+        android:pathData="M9.519,1L9.519,1c0.4,0 0.8,0.3 0.8,0.8v3c0,0.4 -0.3,0.8 -0.8,0.8l0,0c-0.4,0 -0.8,-0.3 -0.8,-0.8v-3C8.719,1.3 9.019,1 9.519,1z" />
+    <path
+        android:fillColor="@color/schedule_item_text"
+        android:pathData="M22.119,1L22.119,1c0.4,0 0.8,0.3 0.8,0.8v3c0,0.4 -0.3,0.8 -0.8,0.8l0,0c-0.4,0 -0.8,-0.3 -0.8,-0.8v-3C21.419,1.3 21.719,1 22.119,1z" />
+    <path
+        android:fillColor="@color/schedule_item_text"
+        android:pathData="M15.838,24.338L15.838,15.238"
+        android:strokeWidth="1"
+        android:strokeColor="@color/schedule_item_text" />
+    <path
+        android:fillColor="@color/schedule_item_text"
+        android:pathData="M20.338,19.838L11.238,19.838"
+        android:strokeWidth="1"
+        android:strokeColor="@color/schedule_item_text" />
+</vector>

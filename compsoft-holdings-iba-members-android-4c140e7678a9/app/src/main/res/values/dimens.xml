@@ -1,0 +1,84 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <dimen name="activity_extra_large_content_padding">64dp</dimen>
+    <dimen name="activity_large_content_padding">32dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_medium_content_padding">12dp</dimen>
+    <dimen name="activity_content_padding">8dp</dimen>
+    <dimen name="activity_small_content_padding">4dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="default_horizontal_margin">16dp</dimen>
+    <dimen name="default_vertical_margin">16dp</dimen>
+
+    <dimen name="single_row_item_vertical_margin">10dp</dimen>
+
+    <integer name="session_token_invalid_code">403</integer>
+
+    <!-- Default Material Button dimentions -->
+    <dimen name="button_inset_horizontal_material">@dimen/control_inset_material</dimen>
+    <dimen name="button_inset_vertical_material">6dp</dimen>
+    <dimen name="control_corner_material">2dp</dimen>
+    <dimen name="button_padding_horizontal_material">8dp</dimen>
+    <dimen name="button_padding_vertical_material">@dimen/control_padding_material</dimen>
+    <dimen name="control_inset_material">4dp</dimen>
+    <dimen name="control_padding_material">4dp</dimen>
+
+    <dimen name="profile_normal_content_top_margin">6dp</dimen>
+    <integer name="profile_picture_required_width">75</integer>
+    <integer name="profile_picture_required_height">100</integer>
+
+    <integer name="data_picker_offset_amount">200</integer>
+    <integer name="edit_bio_character_limit">1024</integer>
+    <dimen name="login_large_horizontal_margin">46dp</dimen>
+
+    <!-- Home -->
+    <dimen name="fab_spacing">85dp</dimen>
+
+    <!-- Content -->
+    <dimen name="content_non_featured_image_dim">100dp</dimen>
+    <dimen name="content_featured_image_height">150dp</dimen>
+    <dimen name="content_card_margin">5dp</dimen>
+    <dimen name="content_detail_image_height">250dp</dimen>
+    <dimen name="content_detail_player_fab_dim">60dp</dimen>
+    <dimen name="content_detail_player_fab_dim_offset">-30dp</dimen>
+
+    <dimen name="conference_slider_vertical_margins">6dp</dimen>
+    <dimen name="conference_slider_horizontal_margins">3dp</dimen>
+
+    <!-- Messages -->
+    <dimen name="message_status_bar_width">5dp</dimen>
+
+    <!-- Conference -->
+    <dimen name="conference_font_map_labels">16sp</dimen>
+    <dimen name="conference_font_map_sub_label">11sp</dimen>
+    <dimen name="conference_font_default">17sp</dimen>
+    <dimen name="conference_font_secondary">14sp</dimen>
+
+
+    <dimen name="conference_main_button_wrapper_height">110dp</dimen>
+
+    <dimen name="conference_description_font_size">14sp</dimen>
+    <dimen name="conference_main_fab_height">56dp</dimen>
+    <dimen name="conference_floor_picker_width">48dp</dimen>
+    <dimen name="conference_floor_picker_height">50dp</dimen>
+    <dimen name="schedule_slide_panel_title_size">20sp</dimen>
+    <dimen name="schedule_slide_panel_height_offset">160dp</dimen>
+    <dimen name="schedule_floor_picker_margin">1dp</dimen>
+
+    <dimen name="profile_contact_info_icon_width">30dp</dimen>
+    <dimen name="profile_member_attending_badge_height">40dp</dimen>
+
+    <dimen name="profile_member_attending_badge_height_small">20dp</dimen>
+
+    <!-- Profile message -->
+    <dimen name="profile_message_content_padding">6dp</dimen>
+
+    <!-- Search -->
+    <dimen name="search_result_content_padding">20dp</dimen>
+    <dimen name="search_fab_bottom_margin">24dp</dimen>
+</resources>

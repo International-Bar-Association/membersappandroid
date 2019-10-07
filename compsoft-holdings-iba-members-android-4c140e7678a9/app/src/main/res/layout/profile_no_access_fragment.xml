@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/no_access_text"
+        android:layout_centerHorizontal="true"
+        android:text="@string/profile_upgrade_membership_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/no_access_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/profile_upgrade_membership_message"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingStart="@dimen/activity_large_content_padding"
+        android:paddingEnd="@dimen/activity_large_content_padding"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/upgrade_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_access_text"
+        android:layout_centerHorizontal="true"
+        android:text="@string/profile_upgrade_membership_button"/>
+
+
+</RelativeLayout>

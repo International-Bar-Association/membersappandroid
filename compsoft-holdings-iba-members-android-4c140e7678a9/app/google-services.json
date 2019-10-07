@@ -1,0 +1,187 @@
+{
+  "project_info": {
+    "project_number": "1065694956759",
+    "firebase_url": "https://iba-members-directory.firebaseio.com",
+    "project_id": "iba-members-directory",
+    "storage_bucket": "iba-members-directory.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065694956759:android:4f5c4149d368f965",
+        "android_client_info": {
+          "package_name": "com.ibamembers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065694956759-077ahcoidljtq46a8r7lnfiqumtncfar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ibamembers",
+            "certificate_hash": "18f289b9b75314f29c0c8cf302323e4c129d8fa1"
+          }
+        },
+        {
+          "client_id": "1065694956759-56su5qk9dt5ol88nb2903o594gk5icd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7JJGPE7n-yHPtBQJQcFxvaCGA9KH5W8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065694956759-56su5qk9dt5ol88nb2903o594gk5icd0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1065694956759-j2e0gar6s83v6kijqnqt2hc1rsd78pb4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.IBA.IBA-Members-Directory.staging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065694956759:android:64e9e23b3cbb3d1c",
+        "android_client_info": {
+          "package_name": "com.ibamembers.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065694956759-jhcu79toa0g4kpv65i9rc566bcdmhma0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ibamembers.debug",
+            "certificate_hash": "9cc426ca2b35cffd6f759966a989dd61269efd5d"
+          }
+        },
+        {
+          "client_id": "1065694956759-56su5qk9dt5ol88nb2903o594gk5icd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7JJGPE7n-yHPtBQJQcFxvaCGA9KH5W8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065694956759-56su5qk9dt5ol88nb2903o594gk5icd0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1065694956759-j2e0gar6s83v6kijqnqt2hc1rsd78pb4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.IBA.IBA-Members-Directory.staging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065694956759:android:963822aee584886d",
+        "android_client_info": {
+          "package_name": "com.ibamembers.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065694956759-ea49464mk4nfchq53c7ondk2mqu4tmof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ibamembers.staging",
+            "certificate_hash": "18f289b9b75314f29c0c8cf302323e4c129d8fa1"
+          }
+        },
+        {
+          "client_id": "1065694956759-56su5qk9dt5ol88nb2903o594gk5icd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7JJGPE7n-yHPtBQJQcFxvaCGA9KH5W8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065694956759-56su5qk9dt5ol88nb2903o594gk5icd0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1065694956759-j2e0gar6s83v6kijqnqt2hc1rsd78pb4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.IBA.IBA-Members-Directory.staging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065694956759:android:02ff32c5cac1ccd3",
+        "android_client_info": {
+          "package_name": "com.ibamembers.staging.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065694956759-3iccog80oedi76lvaedu423b1fe3hsmo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ibamembers.staging.debug",
+            "certificate_hash": "49726acc4664046317a964a465c549874def1a20"
+          }
+        },
+        {
+          "client_id": "1065694956759-56su5qk9dt5ol88nb2903o594gk5icd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7JJGPE7n-yHPtBQJQcFxvaCGA9KH5W8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065694956759-56su5qk9dt5ol88nb2903o594gk5icd0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1065694956759-j2e0gar6s83v6kijqnqt2hc1rsd78pb4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.IBA.IBA-Members-Directory.staging"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

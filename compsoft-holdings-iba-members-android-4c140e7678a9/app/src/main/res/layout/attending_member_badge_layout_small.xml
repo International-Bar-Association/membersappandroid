@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/profile_member_attending_badge_height"
+    android:layout_height="@dimen/profile_member_attending_badge_height">
+
+    <ImageView
+        android:id="@+id/badge_background"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/attending_members_badge"/>
+
+    <ImageView
+        android:id="@+id/badge_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/conference_fab_icon_image"/>
+</RelativeLayout>

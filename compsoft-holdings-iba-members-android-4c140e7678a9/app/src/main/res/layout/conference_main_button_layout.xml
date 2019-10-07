@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/schedule_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/conference_main_button_wrapper_height"
+        android:layout_marginBottom="50dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fab_chat"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            style="@style/ConferenceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/conference_schedule" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_schedule"
+            android:layout_width="@dimen/conference_main_fab_height"
+            android:layout_height="@dimen/conference_main_fab_height"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fab_margin"
+            android:scaleType="center"
+            app:fabSize="normal"
+            app:maxImageSize="48dp"
+            android:src="@drawable/conference_map_icon"
+            app:backgroundTint="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="106dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chat_title"
+        style="@style/ConferenceTitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/conference_messaging"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_chat"
+        android:layout_width="@dimen/conference_main_fab_height"
+        android:layout_height="@dimen/conference_main_fab_height"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="center"
+        app:maxImageSize="62dp"
+        android:src="@drawable/conference_chat_icon"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_title" />
+
+    <TextView
+        android:id="@+id/conference_badge"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/conference_message_badge"
+        android:elevation="10dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="10"
+        android:textColor="@color/darkTextColor"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_chat"
+        app:layout_constraintEnd_toEndOf="@+id/fab_chat"
+        app:layout_constraintHorizontal_bias="1.1"
+        app:layout_constraintStart_toStartOf="@+id/fab_chat"
+        app:layout_constraintTop_toTopOf="@+id/fab_chat"
+        app:layout_constraintVertical_bias="0" />
+
+    <LinearLayout
+        android:id="@+id/website_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/conference_main_button_wrapper_height"
+        android:layout_marginBottom="50dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fab_chat">
+
+        <TextView
+            style="@style/ConferenceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/conference_website"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_website"
+            android:layout_width="@dimen/conference_main_fab_height"
+            android:layout_height="@dimen/conference_main_fab_height"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fab_margin"
+            android:scaleType="center"
+            app:maxImageSize="72dp"
+            android:src="@drawable/conference_web_icon"
+            app:backgroundTint="#FFFFFF" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_close"
+        android:layout_width="@dimen/conference_main_fab_height"
+        android:layout_height="@dimen/conference_main_fab_height"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/fab_margin"
+        android:scaleType="center"
+        android:src="@drawable/conference_close"
+        app:backgroundTint="@color/conference_main_close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

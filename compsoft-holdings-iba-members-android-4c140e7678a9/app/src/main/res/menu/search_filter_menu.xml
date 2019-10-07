@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/action_clear_all"-->
+        <!--android:orderInCategory="70"-->
+        <!--android:title="@string/search_filter_menu_clear_all"-->
+        <!--app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/action_contact_iba"
+        android:orderInCategory="80"
+        android:title="@string/profile_contact_iba"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="90"
+        android:title="@string/profile_menu_logout"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1B2B78</color>
+    <color name="colorPrimaryDark">#18266A</color>
+    <color name="colorAccent">#2B78E5</color>
+    <color name="colorAccentHalfTransparent">#262B78E5</color>
+
+    <color name="selectedTabIconColor">#FFFFFF</color>
+    <color name="tabIconColor">#80ffffff</color>
+
+    <color name="lightLineBreak">#DEDEDE</color>
+    <color name="darkTextColor">#FFFFFF</color>
+    <color name="defaultTextColorHint">#A9ABC1</color>
+    <color name="defaultTextControlNormal">#556096</color>
+    <color name="darkTextControlActivated">#FFFFFF</color>
+    <color name="darkTextControlHighlight">#FFFFFF</color>
+    <color name="lightTextColor">#585858</color>
+    <color name="lightTextControlHighlight">@color/colorPrimaryDark</color>
+
+    <color name="profileHeaderText">#1B2B78</color>
+    <color name="profileLinkText">#579AFF</color>
+    <color name="profileIsPublic">#629632</color>
+
+    <!--<color name="searchResultProfileSelected">#E5F1FF</color>-->
+    <color name="searchResultProfileSelected">#EEEEEE</color>
+
+    <color name="temp">#f7f9f6</color>
+
+    <color name="editBioCharacterCount">#8D8D8D</color>
+    <color name="editBioCharacterCountLimitReached">#ff0000</color>
+
+    <!-- Home -->
+    <color name="conference_fab_background">@color/conference_theme_primary</color>
+    <color name="conference_fab_background_faint">#E6094076</color>
+
+    <!-- Profile -->
+    <color name="profile_message_color">#00a029</color>
+    <color name="profile_message_user_background">@color/colorPrimary</color>
+    <color name="profile_message_recipient_background">#f0f0f0</color>
+    <color name="profile_message_text_date">#80ffffff</color>
+    <color name="profile_message_text_date_dark">#999999</color>
+
+    <!-- Content -->
+    <color name="content_header_background">#dc1b2b78</color>
+    <color name="content_image_background_tint">#4d1b2b78</color>
+    <color name="content_image_placeholder">#d8dae5</color>
+    <color name="content_item_clicked_background">#e5f1fe</color>
+    <color name="content_item_normal_background">#ffffff</color>
+    <color name="content_detail_description_background">#e5e5e5</color>
+    <color name="content_detail_description_font">#222222</color>
+    <color name="content_detail_toolbar">#20000000</color>
+
+    <!-- Message -->
+    <color name="message_status_bar_unread">#157efb</color>
+    <color name="message_detail_description_font">#222222</color>
+    <color name="message_item_row_description_font">#AAAAAA</color>
+    <color name="message_item_status_sending">#737373</color>
+    <color name="message_item_status_failed">@color/conference_main_close</color>
+
+    <!-- Conference -->
+    <color name="conference_theme_primary">#094076</color> <!-- #4e883d -->
+    <color name="conference_theme_primary_dark">#093C6E</color> <!-- #4e883d -->
+    <color name="conference_theme_secondary">#C4C030</color>
+    <color name="conference_search_search_icon">#ffffff</color>
+    <color name="conference_search_icon_tint">#737373</color>
+    <color name="conference_search_font_tint">#222222</color>
+
+    <color name="conference_calendar_font_light_blue">#238AC1</color>
+
+    <color name="conference_main_close">#E7392F</color>
+
+    <color name="floor_key_background_unpressed">#f9ffffff</color>
+    <color name="floor_key_font_unpressed">#111111</color>
+    <color name="floor_key_background_pressed">#f9eeeeee</color>
+    <color name="floor_key_font_pressed">#007aff</color>
+
+    <color name="schedule_slider_background">#f0f0f0</color>
+    <color name="schedule_normal_background">#ffffff</color>
+    <color name="schedule_current_background">@color/conference_theme_secondary</color>
+    <color name="schedule_selected_background">#4B6896</color>
+    <color name="schedule_slider_tab_unselected_font">#888888</color>
+
+    <color name="schedule_item_text">#222222</color>
+    <color name="schedule_item_text_secondary">#969696</color>
+    <color name="schedule_map_unselected">#787878</color>
+
+    <!-- Confererence areaPoints mapper -->
+    <color name="area_background">#00000000</color>
+
+</resources>

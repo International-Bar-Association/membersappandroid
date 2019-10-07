@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/search_filter_favourites_layout"
+            layout="@layout/tab_header_row"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_horizontal_margin">
+
+            <TextView
+                android:id="@+id/search_filter_clear_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="@dimen/activity_small_content_padding"
+                android:text="@string/search_filter_menu_clear_all"
+                android:textColor="@color/profileLinkText"
+                android:textSize="16sp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/search_filter_first_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/search_filter_first_name"
+                    style="@style/SearchFilterEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/search_filter_first_name_hint"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/search_filter_surname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_padding">
+
+                <EditText
+                    android:id="@+id/search_filter_surname"
+                    style="@style/SearchFilterEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/search_filter_surname_hint"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/search_filter_firm_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_padding">
+
+                <EditText
+                    android:id="@+id/search_filter_firm_name"
+                    style="@style/SearchFilterEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/search_filter_firm_name_hint"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/search_filter_conference_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_padding"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/search_filter_conference"
+                    style="@style/SearchFilterEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/spinner_dropdown_arrow"
+                    android:hint="@string/search_filter_conference_hint"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/search_filter_city_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_padding">
+
+                <EditText
+                    android:id="@+id/search_filter_city"
+                    style="@style/SearchFilterEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/search_filter_city_hint"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/search_filter_country_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_padding">
+
+                <EditText
+                    android:id="@+id/search_filter_country"
+                    style="@style/SearchFilterEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/spinner_dropdown_arrow"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:hint="@string/search_filter_country_hint"
+                    android:inputType="textMultiLine"
+                    android:maxLines="2"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/search_filter_committee_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_padding">
+
+                <EditText
+                    android:id="@+id/search_filter_committee"
+                    style="@style/SearchFilterEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/spinner_dropdown_arrow"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:hint="@string/search_filter_committee_hint"
+                    android:inputType="textMultiLine"
+                    android:maxLines="2"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/search_filter_area_of_practice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_padding">
+
+                <EditText
+                    android:id="@+id/search_filter_area_of_practice"
+                    style="@style/SearchFilterEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/spinner_dropdown_arrow"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:hint="@string/search_filter_area_of_practice_hint"
+                    android:inputType="textMultiLine"
+                    android:maxLines="2"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/search_filter_fake_focus_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

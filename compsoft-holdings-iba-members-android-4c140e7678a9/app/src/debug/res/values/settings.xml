@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string translatable="false" name="file_provider_authorities">com.ibamembers.conference.chat.MySuggestionProvider.debug</string>
+
+
+    <!-- Staging -->
+<!--    <string name="rest_client_api_url">http://mobileapp.testing-int-bar.org/</string>-->
+<!--    <string name="image_prefix_url">http://mobileapp.testing-int-bar.org/images/contentlibrary/</string>-->
+<!--    <string name="profile_image_prefix">http://www.int-bar.org/Officers/Images/</string>-->
+
+    <!-- Dev -->
+    <!--<string name="rest_client_api_url">http://10.19.13.146/</string>-->
+    <!--<string name="image_prefix_url">http://10.1.107.81/images/contentlibrary/</string>-->
+
+
+    <!--<string name="rest_client_api_url">https://development.compsoft.co.uk/</string>-->
+    <!--<string name="image_prefix_url">https://development.compsoft.co.uk/IBAMembersApp/images/contentlibrary/</string>-->
+    <!--<string name="profile_image_prefix">http://www.int-bar.org/Officers/Images/</string>-->
+
+    <!--Live-->
+    <string name="image_prefix_url">https://ibamembersapp.ibanet.org/images/contentlibrary/</string>
+    <string name="profile_image_prefix">http://iba.test-int-bar.org/Officers/Images/</string>
+    <string name="rest_client_api_url">https://ibamembersapp.ibanet.org/</string>
+</resources>

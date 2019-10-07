@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+  <path
+      android:strokeWidth="1"
+      android:pathData="M10,8.8h11.6c0.8,0 1.5,0.7 1.5,1.5v12.2c0,0.8 -0.7,1.5 -1.5,1.5L10,24c-0.8,0 -1.5,-0.7 -1.5,-1.5L8.5,10.3C8.5,9.5 9.2,8.8 10,8.8z"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/conference_theme_primary"/>
+  <path
+      android:strokeWidth="1"
+      android:pathData="M8.319,12.9L23.319,12.9"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/conference_theme_primary"/>
+  <path
+      android:pathData="M11.519,7L11.519,7c0.3,0 0.5,0.2 0.5,0.5v2.6c0,0.3 -0.2,0.5 -0.5,0.5l0,0c-0.3,0 -0.5,-0.2 -0.5,-0.5v-2.6C11.019,7.2 11.319,7 11.519,7z"
+      android:fillColor="@color/conference_theme_primary"/>
+  <path
+      android:pathData="M19.819,7L19.819,7c0.3,0 0.5,0.2 0.5,0.5v2.6c0,0.3 -0.2,0.5 -0.5,0.5l0,0c-0.3,0 -0.5,-0.2 -0.5,-0.5v-2.6C19.319,7.2 19.519,7 19.819,7z"
+      android:fillColor="@color/conference_theme_primary"/>
+  <path
+      android:pathData="M11.619,14.8h1.2c0.6,0 1,0.4 1,1v1.2c0,0.6 -0.4,1 -1,1L11.619,18c-0.6,0 -1,-0.4 -1,-1v-1.2C10.619,15.2 11.019,14.8 11.619,14.8z"
+      android:fillColor="@color/conference_theme_primary"/>
+</vector>

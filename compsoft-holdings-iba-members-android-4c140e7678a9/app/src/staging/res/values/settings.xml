@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string translatable="false" name="file_provider_authorities">com.ibamembers.conference.chat.MySuggestionProvider.staging</string>
+
+
+    <!--Staging-->
+    <!--<string name="rest_client_api_url">http://185.99.84.49/</string>-->
+    <!--<string name="image_prefix_url">http://185.99.84.49/images/contentlibrary/</string>-->
+
+    <string name="rest_client_api_url">http://mobileapp.testing-int-bar.org/</string>
+    <string name="image_prefix_url">http://mobileapp.testing-int-bar.org/images/contentlibrary/</string>
+    <string name="profile_image_prefix">http://www.int-bar.org/Officers/Images/</string>
+
+</resources>

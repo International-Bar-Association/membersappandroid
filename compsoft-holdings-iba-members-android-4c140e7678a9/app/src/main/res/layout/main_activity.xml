@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:id="@+id/main_coordinator_layout"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/main_activity_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabGravity="fill"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search_filter_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:src="@drawable/ic_filter_list_24dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/viewpager"
+        app:layout_anchorGravity="bottom|end"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/conf_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:src="@drawable/conference_fab_icon"
+        app:backgroundTint="@color/conference_theme_primary"
+        app:elevation="0dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/viewpager"
+        app:layout_anchorGravity="bottom|end"
+        app:pressedTranslationZ="0dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:src="@drawable/ic_search_24dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/viewpager"
+        app:layout_anchorGravity="bottom|end"/>
+
+    <TextView
+        android:id="@+id/conference_badge"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/conference_message_badge"
+        android:layout_marginEnd="20dp"
+        android:text="10"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:textColor="@color/darkTextColor"
+        app:elevation="5dp"
+        app:layout_anchor="@id/conf_fab"
+        app:layout_anchorGravity="top|end"/>
+
+    <ProgressBar
+        android:id="@+id/main_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>
+

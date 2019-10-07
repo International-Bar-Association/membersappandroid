@@ -1,0 +1,510 @@
+<resources>
+    <string name="app_name">IBA</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="date_formats_api_date">EEE, dd MMM yyyy HH:mm:ss</string>
+    <string name="default_api_date_format">yyyy-MM-dd\'T\'HH:mm:ss</string>
+	<string name="content_date_seen">dd/MM/yyyy</string>
+	<string name="message_status_date_format">yyyy-MM-dd</string>
+	<string name="messages_date_format">yyyy-MM-dd</string>
+	<string name="messages_time_format">HH:mm</string>
+
+    <string name="toolbar_title_profile">Profile</string>
+    <string name="toolbar_title_edit_bio">Edit Bio</string>
+    <string name="toolbar_title_search">Search</string>
+    <string name="toolbar_title_committees">Committees</string>
+    <string name="toolbar_title_areas_of_practice">Areas of Practice</string>
+	<string name="toolbar_title_countries">Countries</string>
+	<string name="toolbar_title_conference">Conference</string>
+    <string name="toolbar_title_favourites">Favourites</string>
+    <string name="toolbar_title_user_profile">User Profile</string>
+	<string name="toolbar_title_messages">Messages</string>
+	<string name="toolbar_title_content">Content</string>
+	<string name="toolbar_title_my_downloads">My Downloads</string>
+    <string name="toolbar_title_iba_conference">IBA Conference</string>
+
+    <string name="login_logo_content_descriptor">IBA Members Logo</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_button">Log In</string>
+    <string name="login_remember_me">REMEMBER ME</string>
+    <string name="login_contact_iba">CONTACT IBA</string>
+	<string name="login_forgot_password">PASSWORD RESET</string>
+    <string name="login_contact_iba_email_address">member@int-bar.org</string>
+    <string name="login_contact_iba_email_subject">IBA Members Directory App Query</string>
+    <string name="login_contact_iba_email_chooser_title">Send Email</string>
+    <string name="login_validation_username_empty">No Email Entered</string>
+    <string name="login_validation_password_empty">No Password Entered</string>
+    <string name="login_failed_error_title">Unable to Login</string>
+    <string name="login_failed_error_message">Invalid username or password.</string>
+    <string name="login_failed_error_title_internet">Unable to Login</string>
+    <string name="login_failed_error_message_internet">Unable to connect to server. Please check your internet connection.</string>
+    <string name="login_failed_error_positive_button">OK</string>
+    <string name="login_privilege_failed">Sorry can\'t login with your class.</string>
+
+    <string name="profile_contact_info">Contact Info</string>
+    <string name="profile_bio">Bio</string>
+    <string name="profile_visibility_state_private">Your Profile is Private</string>
+    <string name="profile_visibility_state_public">Your Profile is Public</string>
+    <string name="profile_committees">Committees</string>
+    <string name="profile_areas_of_practice">Areas of Practice</string>
+    <string name="profile_no_committees">None</string>
+    <string name="profile_no_areas_of_practices">None</string>
+    <string name="profile_contact_iba">Contact IBA</string>
+    <string name="profile_no_content">Not provided</string>
+    <string name="profile_no_name">No name provided</string>
+    <string name="profile_menu_contact_iba">contact IBA</string>
+    <string name="profile_menu_logout">Sign Out</string>
+    <string name="profile_photo_picker_title">Upload Photo</string>
+    <string name="profile_no_phone_number">No phone number</string>
+    <string name="profile_no_email">No email</string>
+	<string name="profile_upgrade_membership_title">Upgrade Membership</string>
+	<string name="profile_upgrade_membership_message">In order to view the profile page, you will need to upgrade your IBA membership. Upgrade now or contact the IBA for more information</string>
+	<string name="profile_upgrade_membership_button">UPGRADE</string>
+	<string name="profile_message">Message</string>
+
+	<!-- Profile Message-->
+	<string name="profile_message_title">Message</string>
+	<string name="profile_message_input_message_hint">Type your message</string>
+	<string name="profile_message_send_button">Send</string>
+	<string name="profile_message_view_profile_button">VIEW PROFILE</string>
+
+	<string name="profile_message_date_format_today">Today</string>
+	<string name="profile_message_date_format_yesterday">Yesterday</string>
+	<string name="profile_message_send_fail_message">Failed to send message</string>
+	<string name="profile_message_status_sending">Sending…</string>
+	<string name="profile_message_status_failed">Failed. Tap to retry.</string>
+
+	<string name="profile_message_delete_message">Are you sure you want to delete this message thread?</string>
+	<string name="profile_message_delete_deleted">Message thread deleted</string>
+	<string name="profile_message_last_seen">last seen: %1$s</string>
+
+    <string name="bio_make_profile_public">Make your Profile Public?</string>
+    <string name="bio_character_count">%1$d / 1024</string>
+
+    <string name="search_result_no_profiles_found">No Profiles found</string>
+    <string name="search_result_failed_error_title">Unable to Search</string>
+    <string name="search_result_failed_error_message">Unable to connect to server. Please check your internet connection.</string>
+    <string name="search_result_failed_error_positive_button">OK</string>
+
+    <string name="search_profile_menu_favourite">Favourite</string>
+
+    <string name="search_filter_first_name_hint">First Name</string>
+    <string name="search_filter_surname_hint">Surname</string>
+    <string name="search_filter_firm_name_hint">Firm Name</string>
+	<string name="search_filter_conference_hint">Conference</string>
+    <string name="search_filter_city_hint">City</string>
+    <string name="search_filter_country_hint">Country</string>
+    <string name="search_filter_committee_hint">Committee</string>
+    <string name="search_filter_area_of_practice_hint">Area of Practice</string>
+    <string name="search_filter_menu_clear_all">Clear All</string>
+
+    <string name="data_picker_no_results">No Results</string>
+    <string name="data_picker_menu_search">Search</string>
+    <string name="data_picker_default_conference">Korea</string>
+	<string name="data_picker_no_conferences">No Conferences</string>
+
+    <string name="dialog_manager_no_internet_connection_dialog_title">No Internet</string>
+    <string name="dialog_manager_no_internet_connection_dialog_message_profile_picture">You will need an internet connection to update your profile picture.</string>
+    <string name="dialog_manager_no_internet_connection_dialog_message_bio">You will need an internet connection to update your biography.</string>
+    <string name="dialog_manager_no_internet_connection_dialog_message_search">You will need an internet connection to search profiles.</string>
+    <string name="dialog_manager_no_internet_connection_dialog_positive_button_message">OK</string>
+    <string name="dialog_manager_no_internet_connection_dialog_message_saving">Unable to save profile information. Please check your internet connection.</string>
+    <string name="dialog_manager_no_internet_connection_dialog_positive_button_saving">Retry</string>
+    <string name="dialog_manager_no_internet_connection_dialog_negative_button_saving">Continue</string>
+    <string name="dialog_manager_no_internet_connection_dialog_message_loading">Unable to load profile. Please check your internet connection.</string>
+    <string name="dialog_manager_no_internet_connection_dialog_positive_button_loading">Retry</string>
+    <string name="dialog_manager_no_internet_connection_dialog_negative_button_loading">Leave</string>
+
+    <string name="favourites_no_profiles">No Profiles</string>
+
+    <string name="session_expired_message">Session expired</string>
+
+    <string name="missing_info_prompt_bio_message">Your profile is missing a biography. Would you like to add one now?</string>
+    <string name="missing_info_prompt_bio_positive">Add now</string>
+    <string name="missing_info_prompt_bio_neutral">Remind me later</string>
+    <string name="missing_info_prompt_bio_negative">Cancel</string>
+    <string name="missing_info_prompt_profile_message">Your profile is missing a profile picture. Would you like to add one now?</string>
+    <string name="missing_info_prompt_profile_positive">Add now</string>
+    <string name="missing_info_prompt_profile_neutral">Remind me later</string>
+    <string name="missing_info_prompt_profile_negative">Cancel</string>
+
+	<!-- Messages -->
+	<string name="messages_no_messages">No Messages</string>
+	<string name="messages_delete_action">Delete</string>
+	<string name="messages_delete_message">Are you sure you want to delete this message?</string>
+	<string name="messages_delete_deleted">Message deleted</string>
+
+	<string name="messages_date_format_yesterday">Yesterday</string>
+	<string name="messages_date_format_today_at">Today at %1$s</string>
+
+	<!-- Content -->
+	<string name="content_filter_tab">All Content</string>
+	<string name="content_no_content">No Content</string>
+	<string name="content_download_header">My Downloads</string>
+	<string name="content_detail_view_article_button">View Article</string>
+	<string name="content_detail_download_action">Download</string>
+	<string name="content_detail_delete_action">Delete</string>
+	<string name="content_detail_delete_action_message">Are you sure you want you remove this content from downloads?</string>
+	<string name="content_detail_delete_action_confirmed">Content removed</string>
+	<string name="content_detail_download_action_complete">Content saved to downloads</string>
+    <string name="content_detail_download_action_failed">Failed to download media</string>
+	<string name="content_detail_download_action_already_downloaded">Already saved to downloads</string>
+    <string name="content_detail_data_warning_title">Warning</string>
+    <string name="content_detail_data_warning_message">You are about to stream an audio file over your mobile network. Connect to Wi-Fi or continue.</string>
+	<string name="content_detail_data_warning_message_video">You are about to stream a video over your mobile network. Connect to Wi-Fi or continue.</string>
+    <string name="content_detail_data_warning_continue">Continue</string>
+	<string name="content_detail_no_internet_connection">Please connect to the internet to continue</string>
+	<string name="content_detail_fail_to_load_media">Fail to load media</string>
+
+	<!-- My Downloads -->
+	<string name="my_downloads_no_downloads">No Downloads</string>
+
+	<!-- Conference -->
+	<string name="conference_main_header1">IBA 2017</string>
+	<string name="conference_main_header2">Sydney</string>
+	<string name="conference_main_header3">8-13 October</string>
+	<string name="conference_main_description">The 2017 IBA Annual Conference will be held in Sydney, Australia’s leading global city. Recognised internationally as a future-focused and innovative business centre, Sydney provides headquarters for almost 40 per cent of the top 500 Australian corporations. As one of the world\'s most multicultural and connected cities, Sydney will be an ideal location for the largest and most prestigious event for international lawyers, providing an abundance of business and networking opportunities.</string>
+	<string name="conference_schedule">Schedule \n세부 일정</string>
+	<string name="conference_messaging_title">Delegate Search &amp; Messages</string>
+	<string name="conference_messaging">Delegate Search &amp; Messages \n참가자 검색 및 메시지</string>
+	<string name="conference_website">Website \n웹 사이트</string>
+	<string name="conference_date_today">TODAY</string>
+	<string name="conference_date_yesterday">YESTERDAY</string>
+	<string name="conference_date_tomorrow">TOMORROW</string>
+
+	<!-- Schedule -->
+	<string name="conference_schedule_title">Schedule</string>
+	<string name="schedule_your_event_title">YOU</string>
+	<string name="schedule_all_event_title">ALL</string>
+	<string name="schedule_your_event_title_section">Your Functions</string>
+	<string name="schedule_all_event_title_section">All Sessions</string>
+	<string name="schedule_fav_event_title_section">Your Favourites</string>
+	<string name="conference_schedule_floor">Floor %1$d</string>
+	<string name="schedule_calendar_info_title">Information</string>
+	<string name="schedule_calendar_info_description">The event times shown here are shown in Korea time (KST) - your calendar will show events relative to your phones saved timezone settings</string>
+	<string name="schedule_calendar_info_got_it">Got it</string>
+
+	<string name="schedule_today">TODAY</string>
+	<string name="schedule_all">ALL</string>
+	<string name="schedule_days">DAYS</string>
+	<string name="schedule_no_schedules_this_day">You have no function booked to display</string>
+	<string name="schedule_no_favourites_this_day">No favourites this day. To add a favourite press the heart on the session you require. This will let you build a personal conference agenda.</string>
+
+	<!-- Chat -->
+	<string name="conference_main_chat_title">@string/conference_messaging_title</string>
+	<string name="conference_contact_search_title">Contact Search</string>
+	<string name="conference_chat_search_hint">Search</string>
+	<string name="conference_chat_search_no_conversation">You have no conversations yet, \nsearch for a contact to start one!</string>
+
+	<!-- Chat message-->
+	<string name="conference_chat_no_message">You have no messages</string>
+
+	<!-- Search -->
+	<string name="conference_search_contact_title">Search Contact</string>
+	<string name="conference_search_image_view_content_description">Image profile</string>
+
+	<!-- Date -->
+	<string name="date_manager_minutes">" minutes"</string>
+	<string name="date_manager_minute">" minute"</string>
+	<string name="date_manager_hours">" hours, "</string>
+	<string name="date_manager_hour">" hour, "</string>
+	<string name="date_manager_day">" day, "</string>
+	<string name="date_manager_days">" days, "</string>
+	<string name="date_manager_ago">| %1$s ago</string>
+	<string name="date_manager_days_ago">| %1$sd ago</string>
+	<string name="date_manager_hours_ago">| %1$sh ago</string>
+	<string name="date_manager_mins_ago">| %1$sm ago</string>
+	<string name="date_manager_just_now">| Just now</string>
+
+    <integer-array name="user_class_search_allowed">
+        <item>1</item>
+        <item>4</item>
+        <item>13</item>
+        <item>27</item>
+    </integer-array>
+
+    <integer-array name="user_class_login_allowed">
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>9</item>
+        <item>12</item>
+        <item>13</item>
+        <item>15</item>
+        <item>16</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+    </integer-array>
+
+    <string name="countries_list_file_name">{
+	\"countries\": [
+		{\"countryId\": 1, \"countryName\":\"USA\"},
+		{\"countryId\": 2, \"countryName\":\"Australia\"},
+		{\"countryId\": 3, \"countryName\":\"Canada\"},
+		{\"countryId\": 4, \"countryName\":\"Afghanistan\"},
+		{\"countryId\": 5, \"countryName\":\"Åland Islands\"},
+		{\"countryId\": 6, \"countryName\":\"Albania\"},
+		{\"countryId\": 7, \"countryName\":\"Algeria\"},
+		{\"countryId\": 8, \"countryName\":\"American Samoa\"},
+		{\"countryId\": 9, \"countryName\":\"Andorra\"},
+		{\"countryId\": 10, \"countryName\":\"Angola\"},
+		{\"countryId\": 11, \"countryName\":\"Anguilla\"},
+		{\"countryId\": 12, \"countryName\":\"Antarctica\"},
+		{\"countryId\": 13, \"countryName\":\"Antigua and Barbuda\"},
+		{\"countryId\": 14, \"countryName\":\"Argentina\"},
+		{\"countryId\": 15, \"countryName\":\"Armenia\"},
+		{\"countryId\": 16, \"countryName\":\"Aruba\"},
+		{\"countryId\": 17, \"countryName\":\"Austria\"},
+		{\"countryId\": 18, \"countryName\":\"Azerbaijan\"},
+		{\"countryId\": 19, \"countryName\":\"Bahamas\"},
+		{\"countryId\": 20, \"countryName\":\"Bahrain\"},
+		{\"countryId\": 21, \"countryName\":\"Bangladesh\"},
+		{\"countryId\": 22, \"countryName\":\"Barbados\"},
+		{\"countryId\": 23, \"countryName\":\"Belarus\"},
+		{\"countryId\": 24, \"countryName\":\"Belgium\"},
+		{\"countryId\": 25, \"countryName\":\"Belize\"},
+		{\"countryId\": 26, \"countryName\":\"Benin\"},
+		{\"countryId\": 27, \"countryName\":\"Bermuda\"},
+		{\"countryId\": 28, \"countryName\":\"Bhutan\"},
+		{\"countryId\": 29, \"countryName\":\"Bolivia\"},
+		{\"countryId\": 30, \"countryName\":\"Bosnia-Herzegovina\"},
+		{\"countryId\": 31, \"countryName\":\"Botswana\"},
+		{\"countryId\": 32, \"countryName\":\"Bouvet Island\"},
+		{\"countryId\": 33, \"countryName\":\"Brazil\"},
+		{\"countryId\": 34, \"countryName\":\"British Indian Ocean Territory\"},
+		{\"countryId\": 35, \"countryName\":\"Brunei\"},
+		{\"countryId\": 36, \"countryName\":\"Bulgaria\"},
+		{\"countryId\": 37, \"countryName\":\"Burkina Faso\"},
+		{\"countryId\": 38, \"countryName\":\"Burundi\"},
+		{\"countryId\": 39, \"countryName\":\"Busingen\"},
+		{\"countryId\": 40, \"countryName\":\"Cambodia\"},
+		{\"countryId\": 41, \"countryName\":\"Cameroon\"},
+		{\"countryId\": 42, \"countryName\":\"Campione d’Italia\"},
+		{\"countryId\": 43, \"countryName\":\"Cape Verde\"},
+		{\"countryId\": 44, \"countryName\":\"Cayman Islands\"},
+		{\"countryId\": 45, \"countryName\":\"Central African Republic\"},
+		{\"countryId\": 46, \"countryName\":\"Ceuta\"},
+		{\"countryId\": 47, \"countryName\":\"Chad\"},
+		{\"countryId\": 48, \"countryName\":\"Chile\"},
+		{\"countryId\": 49, \"countryName\":\"China\"},
+		{\"countryId\": 50, \"countryName\":\"Montenegro\"},
+		{\"countryId\": 51, \"countryName\":\"Cocos (Keeling) Islands\"},
+		{\"countryId\": 52, \"countryName\":\"Colombia\"},
+		{\"countryId\": 53, \"countryName\":\"Comoros\"},
+		{\"countryId\": 54, \"countryName\":\"Congo\"},
+		{\"countryId\": 55, \"countryName\":\"Congo (Dem Rep)\"},
+		{\"countryId\": 56, \"countryName\":\"Cook Islands\"},
+		{\"countryId\": 57, \"countryName\":\"Costa Rica\"},
+		{\"countryId\": 58, \"countryName\":\"Croatia\"},
+		{\"countryId\": 59, \"countryName\":\"Cuba\"},
+		{\"countryId\": 60, \"countryName\":\"Cyprus\"},
+		{\"countryId\": 61, \"countryName\":\"Czech Republic\"},
+		{\"countryId\": 62, \"countryName\":\"Denmark\"},
+		{\"countryId\": 63, \"countryName\":\"Djibouti\"},
+		{\"countryId\": 64, \"countryName\":\"Dominica\"},
+		{\"countryId\": 65, \"countryName\":\"Dominican Republic\"},
+		{\"countryId\": 66, \"countryName\":\"Ecuador\"},
+		{\"countryId\": 67, \"countryName\":\"Egypt\"},
+		{\"countryId\": 68, \"countryName\":\"El Salvador\"},
+		{\"countryId\": 69, \"countryName\":\"Equatorial Guinea\"},
+		{\"countryId\": 70, \"countryName\":\"Eritrea\"},
+		{\"countryId\": 71, \"countryName\":\"Estonia\"},
+		{\"countryId\": 72, \"countryName\":\"Ethiopia\"},
+		{\"countryId\": 73, \"countryName\":\"Faeroe Islands\"},
+		{\"countryId\": 74, \"countryName\":\"Falkland Islands (Malvinas)\"},
+		{\"countryId\": 75, \"countryName\":\"Faroe Islands\"},
+		{\"countryId\": 76, \"countryName\":\"Fiji\"},
+		{\"countryId\": 77, \"countryName\":\"Finland\"},
+		{\"countryId\": 78, \"countryName\":\"France\"},
+		{\"countryId\": 79, \"countryName\":\"French Guiana\"},
+		{\"countryId\": 80, \"countryName\":\"French Polynesia\"},
+		{\"countryId\": 81, \"countryName\":\"French Southern Territories\"},
+		{\"countryId\": 82, \"countryName\":\"Gabon\"},
+		{\"countryId\": 83, \"countryName\":\"Gambia\"},
+		{\"countryId\": 84, \"countryName\":\"Georgia\"},
+		{\"countryId\": 85, \"countryName\":\"Germany\"},
+		{\"countryId\": 86, \"countryName\":\"Ghana\"},
+		{\"countryId\": 87, \"countryName\":\"Gibraltar\"},
+		{\"countryId\": 88, \"countryName\":\"Greece\"},
+		{\"countryId\": 89, \"countryName\":\"Greenland\"},
+		{\"countryId\": 90, \"countryName\":\"Grenada\"},
+		{\"countryId\": 91, \"countryName\":\"Guadeloupe\"},
+		{\"countryId\": 92, \"countryName\":\"Guam\"},
+		{\"countryId\": 93, \"countryName\":\"Guatemala\"},
+		{\"countryId\": 94, \"countryName\":\"Guernsey\"},
+		{\"countryId\": 95, \"countryName\":\"Guinea\"},
+		{\"countryId\": 96, \"countryName\":\"Guinea - Bissau\"},
+		{\"countryId\": 97, \"countryName\":\"Guyana\"},
+		{\"countryId\": 98, \"countryName\":\"Haiti\"},
+		{\"countryId\": 99, \"countryName\":\"Heard Island and McDonald Islands\"},
+		{\"countryId\": 100, \"countryName\":\"Holy See (Vatican City State)\"},
+		{\"countryId\": 101, \"countryName\":\"Honduras\"},
+		{\"countryId\": 102, \"countryName\":\"Hong Kong SAR\"},
+		{\"countryId\": 103, \"countryName\":\"Hungary\"},
+		{\"countryId\": 104, \"countryName\":\"Iceland\"},
+		{\"countryId\": 105, \"countryName\":\"India\"},
+		{\"countryId\": 106, \"countryName\":\"Indonesia\"},
+		{\"countryId\": 107, \"countryName\":\"Iran Islamic Rep\"},
+		{\"countryId\": 108, \"countryName\":\"Iraq\"},
+		{\"countryId\": 109, \"countryName\":\"Ireland\"},
+		{\"countryId\": 110, \"countryName\":\"Isle of Heligoland\"},
+		{\"countryId\": 111, \"countryName\":\"Israel\"},
+		{\"countryId\": 112, \"countryName\":\"Italy\"},
+		{\"countryId\": 113, \"countryName\":\"Cote D’ivoire\"},
+		{\"countryId\": 114, \"countryName\":\"Jamaica\"},
+		{\"countryId\": 115, \"countryName\":\"Japan\"},
+		{\"countryId\": 116, \"countryName\":\"Jersey\"},
+		{\"countryId\": 117, \"countryName\":\"Jordan\"},
+		{\"countryId\": 118, \"countryName\":\"Kazakhstan\"},
+		{\"countryId\": 119, \"countryName\":\"Kenya\"},
+		{\"countryId\": 120, \"countryName\":\"Kiribati\"},
+		{\"countryId\": 121, \"countryName\":\"North Korea\"},
+		{\"countryId\": 122, \"countryName\":\"South Korea\"},
+		{\"countryId\": 123, \"countryName\":\"Kuwait\"},
+		{\"countryId\": 124, \"countryName\":\"Kyrgyz Republic\"},
+		{\"countryId\": 125, \"countryName\":\"Lake Lugano\"},
+		{\"countryId\": 126, \"countryName\":\"Lao PDR\"},
+		{\"countryId\": 127, \"countryName\":\"Latvia\"},
+		{\"countryId\": 128, \"countryName\":\"Lebanon\"},
+		{\"countryId\": 129, \"countryName\":\"Lesotho\"},
+		{\"countryId\": 130, \"countryName\":\"Liberia\"},
+		{\"countryId\": 131, \"countryName\":\"Libya\"},
+		{\"countryId\": 132, \"countryName\":\"Liechtenstein\"},
+		{\"countryId\": 133, \"countryName\":\"Lithuania\"},
+		{\"countryId\": 134, \"countryName\":\"Livigno\"},
+		{\"countryId\": 135, \"countryName\":\"Luxembourg\"},
+		{\"countryId\": 136, \"countryName\":\"Macau\"},
+		{\"countryId\": 137, \"countryName\":\"Republic of Macedonia\"},
+		{\"countryId\": 138, \"countryName\":\"Madagascar\"},
+		{\"countryId\": 139, \"countryName\":\"Malawi\"},
+		{\"countryId\": 140, \"countryName\":\"Malaysia\"},
+		{\"countryId\": 141, \"countryName\":\"Maldives\"},
+		{\"countryId\": 142, \"countryName\":\"Mali\"},
+		{\"countryId\": 143, \"countryName\":\"Malta\"},
+		{\"countryId\": 144, \"countryName\":\"Marshall Islands\"},
+		{\"countryId\": 145, \"countryName\":\"Martinique\"},
+		{\"countryId\": 146, \"countryName\":\"Mauritania\"},
+		{\"countryId\": 147, \"countryName\":\"Mauritius\"},
+		{\"countryId\": 148, \"countryName\":\"Mayotte\"},
+		{\"countryId\": 149, \"countryName\":\"Mexico\"},
+		{\"countryId\": 150, \"countryName\":\"Micronesia (Fed States)\"},
+		{\"countryId\": 151, \"countryName\":\"Moldova\"},
+		{\"countryId\": 152, \"countryName\":\"Monaco\"},
+		{\"countryId\": 153, \"countryName\":\"Mongolia\"},
+		{\"countryId\": 154, \"countryName\":\"Montserrat\"},
+		{\"countryId\": 155, \"countryName\":\"Morocco\"},
+		{\"countryId\": 156, \"countryName\":\"Mount Athos\"},
+		{\"countryId\": 157, \"countryName\":\"Mozambique\"},
+		{\"countryId\": 158, \"countryName\":\"Myanmar\"},
+		{\"countryId\": 159, \"countryName\":\"Namibia\"},
+		{\"countryId\": 160, \"countryName\":\"Nauru\"},
+		{\"countryId\": 161, \"countryName\":\"Nepal\"},
+		{\"countryId\": 163, \"countryName\":\"New Caledonia\"},
+		{\"countryId\": 164, \"countryName\":\"New Zealand\"},
+		{\"countryId\": 165, \"countryName\":\"Nicaragua\"},
+		{\"countryId\": 166, \"countryName\":\"Niger\"},
+		{\"countryId\": 167, \"countryName\":\"Nigeria\"},
+		{\"countryId\": 168, \"countryName\":\"Niue\"},
+		{\"countryId\": 169, \"countryName\":\"Norfolk Island\"},
+		{\"countryId\": 170, \"countryName\":\"Northern Mariana Islands\"},
+		{\"countryId\": 171, \"countryName\":\"Norway\"},
+		{\"countryId\": 172, \"countryName\":\"Oman\"},
+		{\"countryId\": 173, \"countryName\":\"Pakistan\"},
+		{\"countryId\": 174, \"countryName\":\"Palau\"},
+		{\"countryId\": 175, \"countryName\":\"West Bank and Gaza\"},
+		{\"countryId\": 176, \"countryName\":\"Panama\"},
+		{\"countryId\": 177, \"countryName\":\"Papua New Guinea\"},
+		{\"countryId\": 178, \"countryName\":\"Paraguay\"},
+		{\"countryId\": 179, \"countryName\":\"Peru\"},
+		{\"countryId\": 180, \"countryName\":\"Philippines\"},
+		{\"countryId\": 181, \"countryName\":\"Pitcairn\"},
+		{\"countryId\": 182, \"countryName\":\"Poland\"},
+		{\"countryId\": 183, \"countryName\":\"Portugal\"},
+		{\"countryId\": 184, \"countryName\":\"Puerto Rico\"},
+		{\"countryId\": 185, \"countryName\":\"Qatar\"},
+		{\"countryId\": 186, \"countryName\":\"Reunion\"},
+		{\"countryId\": 187, \"countryName\":\"Romania\"},
+		{\"countryId\": 188, \"countryName\":\"Russian Federation\"},
+		{\"countryId\": 189, \"countryName\":\"Rwanda\"},
+		{\"countryId\": 190, \"countryName\":\"Saint Helena\"},
+		{\"countryId\": 191, \"countryName\":\"Saint Kitts and Nevis\"},
+		{\"countryId\": 192, \"countryName\":\"Saint Lucia\"},
+		{\"countryId\": 193, \"countryName\":\"Saint Pierre and Miquelon\"},
+		{\"countryId\": 194, \"countryName\":\"Saint Vincent and the Grenadines\"},
+		{\"countryId\": 195, \"countryName\":\"Samoa\"},
+		{\"countryId\": 196, \"countryName\":\"San Marino\"},
+		{\"countryId\": 197, \"countryName\":\"Sao Tome and Principe\"},
+		{\"countryId\": 198, \"countryName\":\"Saudi Arabia\"},
+		{\"countryId\": 199, \"countryName\":\"Senegal\"},
+		{\"countryId\": 200, \"countryName\":\"Serbia\"},
+		{\"countryId\": 201, \"countryName\":\"Seychelles\"},
+		{\"countryId\": 202, \"countryName\":\"Sierra Leone\"},
+		{\"countryId\": 203, \"countryName\":\"Singapore\"},
+		{\"countryId\": 204, \"countryName\":\"Slovak Republic\"},
+		{\"countryId\": 205, \"countryName\":\"Slovenia\"},
+		{\"countryId\": 206, \"countryName\":\"Solomon Islands\"},
+		{\"countryId\": 207, \"countryName\":\"Somalia\"},
+		{\"countryId\": 208, \"countryName\":\"South Africa\"},
+		{\"countryId\": 209, \"countryName\":\"South Georgia and the South Sandwich Islands\"},
+		{\"countryId\": 210, \"countryName\":\"Spain\"},
+		{\"countryId\": 211, \"countryName\":\"Sri Lanka\"},
+		{\"countryId\": 212, \"countryName\":\"Sudan\"},
+		{\"countryId\": 213, \"countryName\":\"Suriname\"},
+		{\"countryId\": 214, \"countryName\":\"Svalbard and Jan Mayen\"},
+		{\"countryId\": 215, \"countryName\":\"Swaziland\"},
+		{\"countryId\": 216, \"countryName\":\"Sweden\"},
+		{\"countryId\": 217, \"countryName\":\"Switzerland\"},
+		{\"countryId\": 218, \"countryName\":\"Syrian Arab Republic\"},
+		{\"countryId\": 219, \"countryName\":\"Taiwan\"},
+		{\"countryId\": 220, \"countryName\":\"Tajikistan\"},
+		{\"countryId\": 221, \"countryName\":\"Tanzania\"},
+		{\"countryId\": 222, \"countryName\":\"Thailand\"},
+		{\"countryId\": 223, \"countryName\":\"Netherlands\"},
+		{\"countryId\": 224, \"countryName\":\"Timor-Leste\"},
+		{\"countryId\": 225, \"countryName\":\"Togo\"},
+		{\"countryId\": 226, \"countryName\":\"Tokelau\"},
+		{\"countryId\": 227, \"countryName\":\"Tonga\"},
+		{\"countryId\": 228, \"countryName\":\"Trinidad and Tobago\"},
+		{\"countryId\": 229, \"countryName\":\"Tunisia\"},
+		{\"countryId\": 230, \"countryName\":\"Turkey\"},
+		{\"countryId\": 231, \"countryName\":\"Turkmenistan\"},
+		{\"countryId\": 232, \"countryName\":\"Turks and Caicos Islands\"},
+		{\"countryId\": 233, \"countryName\":\"Tuvalu\"},
+		{\"countryId\": 234, \"countryName\":\"Uganda\"},
+		{\"countryId\": 235, \"countryName\":\"Ukraine\"},
+		{\"countryId\": 236, \"countryName\":\"United Arab Emirates\"},
+		{\"countryId\": 237, \"countryName\":\"England\"},
+		{\"countryId\": 238, \"countryName\":\"United States Minor Outlying Islands\"},
+		{\"countryId\": 239, \"countryName\":\"Uruguay\"},
+		{\"countryId\": 240, \"countryName\":\"Uzbekistan\"},
+		{\"countryId\": 241, \"countryName\":\"Vanuatu\"},
+		{\"countryId\": 243, \"countryName\":\"Venezuela\"},
+		{\"countryId\": 244, \"countryName\":\"Vietnam\"},
+		{\"countryId\": 245, \"countryName\":\"Virgin Islands (British)\"},
+		{\"countryId\": 246, \"countryName\":\"Virgin Islands (US)\"},
+		{\"countryId\": 247, \"countryName\":\"Wallis and Futuna\"},
+		{\"countryId\": 248, \"countryName\":\"Western Sahara\"},
+		{\"countryId\": 249, \"countryName\":\"Yemen\"},
+		{\"countryId\": 250, \"countryName\":\"Zambia\"},
+		{\"countryId\": 251, \"countryName\":\"Zimbabwe\"},
+		{\"countryId\": 252, \"countryName\":\"Isle of Man\"},
+		{\"countryId\": 253, \"countryName\":\"Northern Ireland\"},
+		{\"countryId\": 254, \"countryName\":\"Scotland\"},
+		{\"countryId\": 255, \"countryName\":\"Wales\"},
+		{\"countryId\": 256, \"countryName\":\"Sark\"},
+		{\"countryId\": 257, \"countryName\":\"Alderney\"},
+		{\"countryId\": 258, \"countryName\":\"Channel Islands\"},
+		{\"countryId\": 260, \"countryName\":\"Kosovo\"},
+		{\"countryId\": 261, \"countryName\":\"Curaçao\"},
+		{\"countryId\": 262, \"countryName\":\"Sint Maarten \"},
+		{\"countryId\": 263, \"countryName\":\"South Sudan\"}
+	]}
+	</string>
+</resources>

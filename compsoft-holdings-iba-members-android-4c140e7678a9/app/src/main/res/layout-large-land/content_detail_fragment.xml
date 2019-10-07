@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/content_detail_description_background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_content_padding">
+
+        <View
+            android:id="@+id/content_detail_is_landscape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/content_detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/content_detail_image_height"
+                android:background="@color/content_image_placeholder"
+                android:scaleType="centerCrop"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/relativeLayout2"
+                android:layout_alignParentTop="true"
+                android:background="@color/content_image_background_tint"
+                android:scaleType="center"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/content_fab"
+                style="@style/ContentFabStyleLandscape"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/content_detail_image"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/content_detail_player_fab_dim_offset"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_detail_image"
+                android:background="@android:color/white"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/content_detail_title"
+                    style="@style/ContentFeatureTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/activity_content_padding"
+                    android:text="Content Title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    tools:ignore="HardcodedText"/>
+
+                <TextView
+                    android:id="@+id/content_detail_type"
+                    style="@style/ContentFeatureTextLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/content_detail_title"
+                    android:layout_marginEnd="@dimen/activity_content_padding"
+                    android:drawablePadding="@dimen/activity_content_padding"
+                    android:text="Article"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:ignore="HardcodedText"/>
+
+                <TextView
+                    android:id="@+id/content_detail_date_sent"
+                    style="@style/ContentFeatureText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/content_detail_title"
+                    android:layout_toEndOf="@+id/content_detail_type"
+                    android:text="| 0m ago"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:ignore="HardcodedText"/>
+
+                <ImageView
+                    android:id="@+id/content_image_type"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/content_detail_title"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/content_detail_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_content_padding"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/content_detail_description_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/content_detail_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum"
+                android:textColor="@color/content_detail_description_font"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/article_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/content_detail_description_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/content_detail_view_article_button"/>
+    </RelativeLayout>
+</ScrollView>

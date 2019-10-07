@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/profile_snippet_full_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_medium_content_padding">
+
+        <RelativeLayout
+            android:id="@+id/profile_snippet_image_layout"
+            android:layout_width="74dp"
+            android:layout_height="106dp">
+
+            <ImageView
+                android:id="@+id/profile_snippet_picture"
+                android:layout_width="64dp"
+                android:layout_height="96dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/profile_normal_content_top_margin"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_image_placeholder"/>
+
+            <ProgressBar
+                android:id="@+id/profile_snippet_picture_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <!--<include-->
+            <!--android:id="@+id/attending_members_layout"-->
+            <!--layout="@layout/attending_member_badge_layout"-->
+            <!--android:layout_width="@dimen/profile_member_attending_badge_height_small"-->
+            <!--android:layout_height="@dimen/profile_member_attending_badge_height_small"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentEnd="true"/>-->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_snippet_info_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/default_horizontal_margin"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/profile_snippet_image_layout">
+
+            <TextView
+                android:id="@+id/profile_snippet_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                android:id="@+id/profile_snippet_firm_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Firm Name"
+                android:textColor="@color/profileHeaderText"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                android:id="@+id/profile_snippet_job_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Role"
+                tools:ignore="HardcodedText"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/view_profile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:paddingTop="5dp"
+            android:text="@string/profile_message_view_profile_button"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightLineBreak"/>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/message_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/message_state_bar"
+        android:layout_width="@dimen/message_status_bar_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/separator"
+        android:background="@color/message_status_bar_unread"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/message_profile_image_layout"
+        android:layout_width="74dp"
+        android:layout_height="106dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:layout_marginStart="@dimen/activity_medium_content_padding"
+        android:layout_marginTop="@dimen/activity_medium_content_padding"
+        android:layout_toRightOf="@+id/message_state_bar">
+
+        <ImageView
+            android:id="@+id/message_profile_image"
+            android:layout_width="64dp"
+            android:layout_height="96dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/profile_normal_content_top_margin"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_image_placeholder"/>
+
+        <!--<include-->
+            <!--android:id="@+id/attending_members_layout"-->
+            <!--layout="@layout/attending_member_badge_layout_small"-->
+            <!--android:layout_width="@dimen/profile_member_attending_badge_height_small"-->
+            <!--android:layout_height="@dimen/profile_member_attending_badge_height_small"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentEnd="true"/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/message_profile_image_layout"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/message_date"
+            android:layout_toStartOf="@+id/message_date"
+            android:text="No title"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/message_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/activity_content_padding"
+            android:gravity="end"
+            android:text="00:00"
+            tools:ignore="HardcodedText"/>
+
+
+        <TextView
+            android:id="@+id/message_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/message_title"
+            android:layout_below="@+id/message_title"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/message_item_row_description_font"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/activity_medium_content_padding"
+        android:layout_below="@+id/message_profile_image_layout"
+        android:background="@color/lightLineBreak"
+        android:visibility="visible"/>
+
+    <View
+        android:id="@+id/separator_no_image"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/activity_medium_content_padding"
+        android:layout_below="@+id/text_body_layout"
+        android:background="@color/lightLineBreak"
+        android:visibility="gone"/>
+
+</RelativeLayout>

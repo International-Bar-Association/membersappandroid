@@ -1,0 +1,64 @@
+{
+    "rooms": [
+        {
+            "roomId": 1,
+            "roomName": "Level 1",
+            "buildingName": "Level 1 - Lobby level",
+            "level": 1,
+            "location": {
+                "x": 1000,
+                "y": 1000
+            }
+        },
+        {
+            "roomId": 2,
+            "roomName": "Level 2",
+            "buildingName": "Lobby level",
+            "level": 2,
+            "location": {
+                "x": 1000,
+                "y": 1000
+            }
+        },
+        {
+            "roomId": 3,
+            "roomName": "Level 3",
+            "buildingName": "Lobby level",
+            "level": 3,
+            "location": {
+                "x": 1000,
+                "y": 1000
+            }
+        },
+        {
+            "roomId": 4,
+            "roomName": "Level 4",
+            "buildingName": "Omni Shoreham Hotel",
+            "level": 4,
+            "location": {
+                "x": 1000,
+                "y": 1000
+            }
+        },
+        {
+            "roomId": 5,
+            "roomName": "Level 5",
+            "buildingName": "Mezzanine level",
+            "level": 5,
+            "location": {
+                "x": 1000,
+                "y": 1000
+            }
+        },
+        {
+            "roomId": 6,
+            "roomName": "Level 1",
+            "buildingName": "Mezzanine level",
+            "level": 1,
+            "location": {
+                "x": 1500,
+                "y": 900
+            }
+        }
+    ]
+}

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <TextView
+            android:id="@+id/building_selector"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_horizontal_margin"
+            android:background="@drawable/conference_building_border"
+            android:drawableEnd="@drawable/conference_drop_down_icon"
+            android:elevation="1dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_content_padding"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_content_padding"
+            android:text="Building One"
+            android:textColor="@color/content_detail_description_font"
+            android:textSize="@dimen/conference_font_map_labels"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_right"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_back"
+            android:layout_width="@dimen/conference_main_fab_height"
+            android:layout_height="@dimen/conference_main_fab_height"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:elevation="10dp"
+            android:scaleType="center"
+            android:src="@drawable/conference_back_icon"
+            android:visibility="gone"
+            app:backgroundTint="#EDEDED"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ibamembers.conference.event.CustomTappableView
+            android:id="@+id/floor_plan_image_dummy"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ibamembers.conference.event.CustomTappableView
+            android:id="@+id/floor_plan_image_top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/floor_plan_image_bottom_animator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/floor_plan_image_top_animator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/floor_layout_wrapper"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_medium_content_padding"
+            android:background="@drawable/schedule_floor_border"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/building_selector"/>
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            map:uiCompass="true"
+            map:uiZoomGestures="true" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/offsite_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/conference_building_border"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_content_padding"
+            android:paddingBottom="@dimen/activity_content_padding"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_right"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:layout_constraintTop_toTopOf="@+id/building_selector"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/offsite_label_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Offsite"
+                android:textColor="@color/content_detail_description_font"
+                android:textSize="@dimen/conference_font_map_labels"
+                android:paddingStart="@dimen/activity_medium_content_padding"
+                android:paddingEnd="@dimen/activity_medium_content_padding"/>
+
+            <TextView
+                android:id="@+id/offsite_label_korean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/content_detail_description_font"
+                android:textSize="@dimen/conference_font_map_sub_label" />
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_now"
+        android:layout_width="@dimen/conference_main_fab_height"
+        android:layout_height="@dimen/conference_main_fab_height"
+        android:layout_above="@+id/anchored_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:elevation="10dp"
+        android:scaleType="center"
+        android:src="@drawable/conference_now_icon"
+        android:visibility="gone"
+        app:backgroundTint="@color/conference_theme_primary" />
+
+    <View
+        android:id="@+id/anchored_layout"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentBottom="true"></View>
+
+    <View
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"></View>
+
+
+</RelativeLayout>

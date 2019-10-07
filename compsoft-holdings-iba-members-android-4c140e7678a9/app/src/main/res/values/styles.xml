@@ -1,0 +1,177 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/BrandButtonStyle</item>
+        <item name="android:textColorHint">@color/defaultTextColorHint</item>
+        <item name="colorControlNormal">@color/defaultTextControlNormal</item>
+        <item name="android:editTextColor">@color/darkTextColor</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeTransparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="LoginTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/login_bg_phone</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.AppBarOverlayConference" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:editTextColor">@color/defaultTextColorHint</item>
+        <item name="android:textColorHint">@color/defaultTextColorHint</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SingleRowItem">
+        <item name="android:layout_marginTop">@dimen/single_row_item_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/single_row_item_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="DefaultTextMediumBold">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="DefaultTextMediumBold.LightBlue" parent="DefaultTextMediumBold">
+        <item name="android:textColor">@color/conference_calendar_font_light_blue</item>
+    </style>
+
+    <style name="DefaultTextLargeBold">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="DefaultTextLargeBold.LightBlue" parent="DefaultTextLargeBold">
+        <item name="android:textColor">@color/conference_calendar_font_light_blue</item>
+    </style>
+
+    <style name="DefaultTextLargeBold.DarkBlue" parent="DefaultTextLargeBold">
+        <item name="android:textColor">@color/conference_theme_primary</item>
+    </style>
+
+    <style name="LightEditText" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/lightTextColor</item>
+        <item name="android:colorControlHighlight">@color/lightTextControlHighlight</item>
+    </style>
+
+    <style name="BrandButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="ProfileHeaderTextView">
+        <item name="android:textColor">@color/profileHeaderText</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="ProfileLinkTextView">
+        <item name="android:textColor">@color/profileLinkText</item>
+    </style>
+
+    <style name="ProfileMessageLinkTextView">
+        <item name="android:textColor">@color/profile_message_color</item>
+    </style>
+
+    <style name="SearchFilterEditText">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:inputType">textCapWords|textNoSuggestions</item>
+    </style>
+
+    <style name="DataPickerSearchEdit">
+        <item name="android:background">@drawable/white_background_edit_text</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- -->
+    <style name="ContentFeatureTitle">
+        <item name="android:textColor">@color/profileHeaderText</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ContentFeatureText" parent="ProfileHeaderTextView"/>
+
+    <style name="ContentFeatureTextLink" parent="ProfileLinkTextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="MessageDetailTitle">
+        <item name="android:textColor">@color/profileHeaderText</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MessageDetailDate">
+        <item name="android:textColor">@color/profileHeaderText</item>
+    </style>
+
+    <style name="MessageDetailDescription">
+        <item name="android:textColor">@color/message_detail_description_font</item>
+    </style>
+
+    <style name="ContentFabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:src">@drawable/content_detail_play_icon</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+
+    <style name="ContentFabStyleLandscape">
+        <item name="android:layout_width">@dimen/content_detail_player_fab_dim</item>
+        <item name="android:layout_height">@dimen/content_detail_player_fab_dim</item>
+        <item name="android:src">@drawable/content_detail_play_icon</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+
+    <style name="ContentSeekbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+    </style>
+
+    <style name="ConferenceContent">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ConferenceTitle" parent="ConferenceContent">
+        <item name="android:textSize">@dimen/conference_description_font_size</item>
+    </style>
+
+    <style name="ScheduleFloorButton">
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:height">0dp</item>
+    </style>
+
+</resources>

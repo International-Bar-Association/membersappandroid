@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="10"
+        android:title="@string/data_picker_menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_favourite"
+        android:orderInCategory="20"
+        android:title="@string/search_profile_menu_favourite"
+        android:icon="@drawable/fav"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_contact_iba"
+        android:orderInCategory="40"
+        android:title="@string/profile_contact_iba"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="50"
+        android:title="@string/profile_menu_logout"
+        app:showAsAction="never" />
+</menu>
